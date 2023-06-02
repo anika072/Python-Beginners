@@ -1,0 +1,23 @@
+options=''
+is_start=False
+
+while options.upper()!='QUIT':
+    options = input('>')
+    if options.upper() == 'HELP':
+        print('start - to start the car\nstop - to stop the car\nquit - to exit')
+    elif options.upper() == 'START':
+        if is_start:
+            print('Hey!! Car has already started')
+        else:
+            print('Car started.....Ready to go!')
+            is_start = True
+    elif options.upper() == 'STOP':
+        if is_start:
+            print('Car stopped!')
+            is_start = False
+        else:
+            print('Hey!! Car already stop')
+    elif options.upper()=='QUIT':
+        break
+    else:
+        print("I don't understand that...")
