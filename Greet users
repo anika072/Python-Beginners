@@ -1,0 +1,5 @@
+##Greet users-->
+def greet_user(name):
+    print(f'Hi {name}!')
+name=input("Enter a name:")
+greet_user(name)
