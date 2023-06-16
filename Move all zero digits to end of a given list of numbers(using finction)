@@ -1,0 +1,8 @@
+Move all zero digits to end of a given list of numbers(using finction)-->
+original_list = [3, 4, 0, 0, 0, 6, 2, 0, 6, 7, 6, 0, 0, 0, 9, 10, 7, 4, 4, 5, 3, 0, 0, 2, 9, 7, 1]
+def zeros_at_end(original_list):
+    zeros_list = [i for i in original_list if i == 0]
+    original_list = [i for i in original_list if i != 0]
+    final_list = original_list + zeros_list
+    return final_list
+print(zeros_at_end(original_list))
