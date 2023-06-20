@@ -1,4 +1,4 @@
-Exception Handling(ZeroDivisionError)-->
+##Exception Handling(ZeroDivisionError)-->
 try:
     age=int(input("Age>"))
     income=int(input("Income>"))
